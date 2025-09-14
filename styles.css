@@ -245,6 +245,7 @@ nav a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: 0px 0px 30px 5px orangered;
 }
 
 .achieve {
@@ -301,6 +302,9 @@ nav a {
 
 .apt {
     align-content: center;
+    display: flex;
+    height: 60px;
+    gap: 7px
 }
 
 .apt button {
@@ -345,40 +349,194 @@ nav a {
 .properties {
     text-align: center;
 }
-.card-container{
+
+.properties h3 {
+    font-weight: bolder;
+}
+
+.card-container {
     padding: 0px 60px;
 }
-.cards{
+
+.cards {
     display: flex;
     gap: 30px;
 }
-.card{
-width: 550px;
-height: 500px;
-padding: 10px;
-background-color: whitesmoke;
+
+.card {
+    width: 550px;
+    height: 500px;
+    padding: 15px;
+    background-color: whitesmoke;
 }
-.cost{
+
+.card-body {
+    border-bottom: 1px solid lightgray;
+}
+
+.card-title {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+/* .card-title h5 {
+  margin: 0px;         
+  padding-left: 0px;   
+}  */
+
+.card-body .card-title {
+    padding-left: 0%;
+}
+
+.cost {
     display: flex;
     justify-content: space-between;
 }
-.rooms ul{
+
+.cost p {
+    color: orangered;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.cost span {
+    background-color: rgb(241, 207, 195);
+    width: 93px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.rooms ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
-.area ul{
-     display: flex;
-    gap: 7px;
+
+.area ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
+    padding-left: 0px;
 }
-.visit{
+
+.visit {
     background-color: black;
     color: white;
     border-radius: 25px;
     width: 130px;
     padding: 7px;
+    margin: 10px auto;
+    display: block;
+    margin-bottom: 6px;
+
 }
+
+.agents {
+    position: relative;
+}
+
+form {
+    position: absolute;
+}
+
+.agents iframe {
+    position: absolute;
+    top: 60%;
+    left: 6%;
+}
+
+form {
+    position: absolute;
+    left: 55%;
+    /* bottom: -48%; */
+    top: 58%;
+    background-color: white;
+    text-align: start;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px grey;
+    height: 620px;
+    width: 455px;
+}
+
+form input {
+    border-radius: 48px;
+    background-color: whitesmoke;
+    border: none;
+    width: 100%;
+    padding: 15px;
+}
+
+form textarea {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    width: 96%;
+    height: 62px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    width: 36%;
+}
+
+.agents img {
+    width: 100%;
+}
+
+.contact {
+    position: absolute;
+    left: 43%;
+    top: 15%;
+}
+
+.contact h4 {
+    color: white;
+    font-weight: bolder;
+}
+
+.connect {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 6%;
+    top: 370px;
+    width: 91%;
+}
+
+.phone,
+.email {
+    display: flex;
+    gap: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 2px 8px grey;
+    /* width: 21%; */
+}
+
+.phone i,
+.email i {
+    font-size: 35px;
+    color: orangered;
+}
+
+.phone p,
+.email p {
+    font-size: 15px;
+    margin: 0;
+    /* color: grey; */
+}
+
+
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media query for mobile large */
@@ -430,6 +588,10 @@ background-color: whitesmoke;
         height: 40px;
         /* force smaller height */
     }
+    .small .navbar-toggler {
+        padding: 1px 6px;
+        font-size: 10px;
+    }
 
     .small .navbar-brand {
         font-size: 14px;
@@ -437,13 +599,9 @@ background-color: whitesmoke;
         padding: 0;
         /* remove extra spacing */
     }
-
-    .small .navbar-toggler {
-        padding: 1px 6px;
-        /* shrink toggle button */
-        font-size: 10px;
-        /* shrink icon */
-    }
+    .offcanvas-body .navbar-nav {
+    gap: 15px;
+}
 
     .villa {
         display: none;
@@ -615,6 +773,7 @@ background-color: whitesmoke;
         background-color: black;
         color: white;
         border: 0px;
+        width: 104px;
     }
 
     .data {
@@ -642,9 +801,95 @@ background-color: whitesmoke;
     .extra-info {
         width: 300px;
     }
+
+    .card {
+        width: 197px;
+        height: 405px;
+        padding: 11px;
+        background-color: whitesmoke;
+    }
+
+    .rooms ul,
+    .area ul {
+        font-size: 15px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 360px;
+        height: 505px !important;
+        padding: 20px;
+    }
+
+    .visit {
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        width: 130px;
+        padding: 7px;
+        margin: 20px auto;
+        display: block;
+        margin-bottom: 6px;
+
+    }
+
+    .contact {
+        position: absolute;
+        left: 26%;
+        top: 15%;
+    }
+
+    form {
+        position: absolute;
+        left: 1%;
+        /* bottom: -48%; */
+        top: 288%;
+        background-color: white;
+        text-align: start;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    form input {
+        border-radius: 48px;
+        background-color: whitesmoke;
+        border: none;
+        width: 100%;
+        padding: 15px;
+    }
+
+    form textarea {
+        border: none;
+        background-color: whitesmoke;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .agents iframe {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        width: 95%;
+        height: 300px;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 25px;
+        width: 38%;
+    }
 }
 
-/* --------------------TABLET---------------------------------- */
+/* --------------------TABLET----------------------------------------------------------------------------------------------------------------- */
 @media (min-width:768px) and (max-width:1023px) {
     .heading {
         height: 25px;
@@ -695,9 +940,7 @@ background-color: whitesmoke;
 
     .small .navbar-toggler {
         padding: 1px 6px;
-        /* shrink toggle button */
         font-size: 10px;
-        /* shrink icon */
     }
 
     .villa {
@@ -838,6 +1081,15 @@ background-color: whitesmoke;
         gap: 20px;
     }
 
+    .apt button {
+        border-radius: 5px;
+        padding: 3px;
+        background-color: black;
+        color: white;
+        border: 0px;
+        width: 104px;
+    }
+
     .data {
         padding: 0px 100px;
         display: flex;
@@ -869,13 +1121,116 @@ background-color: whitesmoke;
         height: 400px;
     }
 
-     .extra-info {
+    .extra-info {
         width: 600px;
+    }
+
+    .card {
+        width: 197px;
+        height: 405px;
+        padding: 11px;
+        background-color: whitesmoke;
+    }
+
+    .rooms ul,
+    .area ul {
+        font-size: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 360px;
+        height: 505px !important;
+        padding: 20px;
+    }
+
+    .contact {
+        position: absolute;
+        left: 26%;
+        top: 15%;
+    }
+form {
+        position: absolute;
+        left: 55%;
+        top: 80%;
+        background-color: white;
+        text-align: start;
+        padding: 13px;
+        border-radius: 15px;
+        height: 588px;
+        width: 300px;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    form input {
+        border-radius: 48px;
+        background-color: whitesmoke;
+        border: none;
+        width: 100%;
+        padding: 15px;
+    }
+
+    form textarea {
+        border: none;
+        background-color: whitesmoke;
+        border-radius: 12px;
+        width: 96%;
+        height: 62px;
+    }
+
+    .agents iframe {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        width: 50%;
+        height: 300px;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 28px;
+        width: 54%;
+    }
+
+    .contact {
+        position: absolute;
+        left: 38%;
+        top: 15%;
+    }
+
+    .phone,
+    .email {
+        display: flex;
+        gap: 20px;
+        padding: 6px 5px;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0 2px 8px grey;
+        /* width: 33%; */
+        /* height: 0%; */
+        border: 1px solid;
+    }
+
+    .connect {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        left: 2%;
+        top: 320px;
+        width: 91%;
     }
 }
 
-/* ----------------------------------------LAPTOP------------------------------------------------ */
-@media (min-width:1024px) and (max-width:1439px) {
+/* ----------------------------------------LAPTOP---------------------------------------------------------------------------------------- */
+/* @media (min-width:1024px) and (max-width:1439px) {
     .content {
         color: black;
         position: absolute;
@@ -906,4 +1261,28 @@ background-color: whitesmoke;
         bottom: 150px;
         left: 12%;
     }
-}
+
+    .flat {
+        border: 0px;
+        border-radius: 3px;
+        width: 600px;
+        height: 401px;
+        padding: 0px;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    .cards {
+        align-items: center;
+    }
+
+    .card {
+        width: 550px;
+        height: 450px !important;
+        padding: 10px;
+    }
+
+    .rooms ul,
+    .area ul {
+        font-size: 10px;
+    }
+} */
