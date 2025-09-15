@@ -58,7 +58,9 @@ nav ul {
     gap: 50px;
     justify-content: space-evenly;
 }
-
+nav ul a:active{
+    color: orangered;
+}
 nav li {
     list-style: none;
 }
@@ -1305,6 +1307,9 @@ footer {
         margin-bottom: 1rem;
         font-size: 15px;
     }
+    .apartment-text .accordion {
+    width: 300px;
+}
 }
 
 /* --------------------TABLET----------------------------------------------------------------------------------------------------------------- */
@@ -1495,8 +1500,8 @@ footer {
     .apt {
         align-content: center;
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column; */
+        /* gap: 20px; */
     }
 
     .apt button {
@@ -1700,6 +1705,10 @@ footer {
         width: 100%;
         text-align: justify;
     }
+    .apartment-text .accordion {
+    width: 555px;
+}
+    
 }
 
 /* ----------------------------------------LAPTOP---------------------------------------------------------------------------------------- */
