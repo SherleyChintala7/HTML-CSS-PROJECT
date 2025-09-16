@@ -642,6 +642,7 @@ footer {
     padding: 40px;
     padding-top: 100px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .enquire {
@@ -1104,22 +1105,22 @@ footer {
     .contact {
         position: absolute;
         left: 26%;
-        top: 15%;
+        top: 10%;
     }
 
-    form {
-        position: absolute;
-        left: 1%;
-        /* bottom: -48%; */
-        top: 288%;
-        background-color: white;
-        text-align: start;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px grey;
-    }
-
-    form input {
+    .agents form {
+    position: absolute;
+    left: 7%;
+    top: 79%;
+    background-color: white;
+    text-align: start;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px grey;
+    height: 597px;
+    width: 360px;
+}
+    .agents form input {
         border-radius: 48px;
         background-color: whitesmoke;
         border: none;
@@ -1127,7 +1128,7 @@ footer {
         padding: 15px;
     }
 
-    form textarea {
+    .agents form textarea {
         border: none;
         background-color: whitesmoke;
         border-radius: 12px;
@@ -1140,15 +1141,29 @@ footer {
         left: 2%;
         width: 95%;
         height: 300px;
+        margin-top: 733px;
     }
-
+    .connect {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 6%;
+    top: 659px;
+    width: 91%;
+}
+.number h5{
+    font-size: 15px;
+}
     button {
         background-color: black;
         color: white;
-        padding: 12px;
+        padding: 3px;
         border: none;
         border-radius: 25px;
-        width: 38%;
+        width: 40%;
+    }
+    #footer{
+            margin-top: 1005px;
     }
 
     /* ========================PROPERTIES============================================================================================= */
@@ -1221,6 +1236,7 @@ footer {
         gap: 20px;
         width: 91%;
         padding-top: 50px;
+        flex-wrap: wrap;
     }
 
     .phone {
@@ -1577,11 +1593,16 @@ footer {
         left: 26%;
         top: 15%;
     }
-
-    form {
+.agents {
+    position: relative;
+    margin-bottom: 480px;
+    display: flex;
+    flex-direction: column;
+}
+       .agents form {
         position: absolute;
         left: 55%;
-        top: 80%;
+        top: 69%;
         background-color: white;
         text-align: start;
         padding: 13px;
@@ -1591,7 +1612,7 @@ footer {
         box-shadow: 0px 0px 5px grey;
     }
 
-    form input {
+    .agents form input {
         border-radius: 48px;
         background-color: whitesmoke;
         border: none;
@@ -1599,7 +1620,7 @@ footer {
         padding: 15px;
     }
 
-    form textarea {
+    .agents form textarea {
         border: none;
         background-color: whitesmoke;
         border-radius: 12px;
@@ -1645,10 +1666,11 @@ footer {
 
     .connect {
         display: flex;
+        flex-direction: column;
         gap: 20px;
         position: relative;
         left: 2%;
-        top: 320px;
+        top: 387px;
         width: 91%;
     }
 
